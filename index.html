@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bootstrap</title>
+  </head>
+  <body id="body">
+    <!-- ----------------- Navbar-----------------  -->
+
+    <nav class="navbar navbar-expand-lg bg-gradient">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="w-50" src="./img/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+            <li class="nav-item bg-danger-subtle me-3">
+              <a class="nav-link active" aria-current="page" href="#cultural"
+                >Turismo Cultural</a
+              >
+            </li>
+            <li class="nav-item bg-info-subtle me-3">
+              <a class="nav-link" href="#playa">Turismo de Sol y Playa</a>
+            </li>
+            <li class="nav-item bg-success-subtle me-3">
+              <a class="nav-link" href="#deportivo">Deportivo</a>
+            </li>
+            <li class="nav-item bg-danger-subtle me-3">
+              <a class="nav-link" href="#Ecológico">Turismo Ecológico</a>
+            </li>
+            <li class="nav-item bg-warning-subtle me-3">
+              <a class="nav-link" href="#atracciones"
+                >Atracciones Turísticas
+              </a>
+            </li>
+            <li class="nav-item bg-danger-subtle me-3">
+              <a class="nav-link" href="#visitar">Visitar</a>
+            </li>
+            <li class="nav-item bg-info-subtle me-3">
+              <a class="nav-link" href="#gastronomía">Gastronomía en Madrid</a>
+            </li>
+            <li class="nav-item bg-info-subtle">
+              <a class="nav-link" href="#transporte">Transporte en Madrid</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- -- Corousel --- -->
+
+    <div id="carouselExampleCaptions" class="carousel slide mb-5">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/Plaza-Mayor-898x601.webp"
+            class="d-block w-100 opacity-50"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-1 fw-bolder text-dark-emphasis">
+              Madrid: Un Destino Turístico Inigualable
+            </h1>
+            <p class="text-info-emphasis fw-bolder fs-2">
+              Descubre lo mejor de Madrid, una ciudad que combina cultura, sol y
+              playa, y ecoturismo. Adéntrate en un mundo de historia fascinante
+              y descubre sus secretos ocultos, disfruta de sus playas urbanas y
+              explora sus espacios naturales protegidos.
+            </p>
+            <div>
+              <a class="nav-link" href="#map">
+                <button class="btn btn-secondary fs-4">Explorar Madrid</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/almudena-cathedral.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fs-1 fw-bolder">Almudena Cathedral</h5>
+            <p class="fs-2 fw-bolder">
+              El interior de La Almudena sorprende por tener detalles
+              completamente diferentes a otras catedrales: el techo y las
+              vidrieras dejan de lado el estilo clásico para dar paso a los
+              colores vivos y las líneas rectas.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/historia-palacio-real-madrid.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fs-1 fw-bolder">Sel Palacio Real</h5>
+            <p class="fs-2 fw-bolder">
+              Así es el palacio más grande de Europa.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main class="text-center container bg-light mt-5">
+      <!-- -- instructors --- -->
+      <section id="cultural" class="container bg-body-secondary mt-1">
+        <h2 class="text-secondary fw-bolder display-4 m-5">
+          Turismo Cultural en Madrid
+        </h2>
+        <div class="row g-5 justify-content-between">
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a data-fslightbox href="./img/istock-475444818.jpg">
+                <img
+                  src="./img/istock-475444818.jpg"
+                  class="card-img-top w-100"
+                  alt="t1"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Museos</h5>
+                <p class="card-text fs-4">
+                  Madrid cuenta con una amplia colección de museos que albergan
+                  obras maestras de artistas reconocidos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a data-fslightbox href="./img/Palacio-de-Cibeles.jpg">
+                <img
+                  src="./img/Palacio-de-Cibeles.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Arquitectura</h5>
+                <p class="card-text fs-4">
+                  Admira la arquitectura impresionante de sitios emblemáticos
+                  como el Palacio Real y la Gran Vía.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a data-fslightbox href="./img/shutterstock_179703974_1.jpg">
+                <img
+                  src="./img/shutterstock_179703974_1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Eventos Culturales</h5>
+                <p class="card-text fs-4">
+                  Disfruta de festivales, conciertos y representaciones
+                  teatrales que tienen lugar a lo largo del año.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="playa" class="container bg-body-secondary mb-5 p-3">
+        <h2 class="text-secondary fw-bolder display-4 m-5">
+          Turismo de Sol y Playa en Madrid
+        </h2>
+        <div class="row g-5 justify-content-between">
+          <div class="col-6 col-md-4">
+            <div class="card w-100">
+              <a data-fslightbox href="./img/IMG_20180826_183252.jpg">
+                <img
+                  src="./img/IMG_20180826_183252.jpg"
+                  class="card-img-top"
+                  alt="t1"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Playas Urbanas</h5>
+                <p class="card-text fs-4">
+                  Relájate en las playas urbanas de Madrid, como Madrid Río y El
+                  Pantano de San Juan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card w-100">
+              <a data-fslightbox href="./img/15635304395714.jpg">
+                <img
+                  src="./img/15635304395714.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Piscinas en Azoteas</h5>
+                <p class="card-text fs-4">
+                  Refrescante y con vistas panorámicas, sumérgete en las
+                  piscinas en azoteas de hoteles exclusivos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a
+                data-fslightbox
+                href="./img/mejores-piscinas-naturales-madrid-6479c38f5dba8.jpeg"
+              >
+                <img
+                  src="./img/mejores-piscinas-naturales-madrid-riosequillo-6479c4664b6e8.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Embalses Naturales</h5>
+                <p class="card-text fs-4">
+                  Explora los embalses cercanos donde podrás nadar y disfrutar
+                  en un entorno natural.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="deportivo" class="bg-lightp-3 mb-5">
+        <h2 class="text-secondary fw-bolder display-4 mb-4">
+          Turismo deportivo y Real Madrid
+        </h2>
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <p class="fs-4 ms-5">
+              Embárcate en una experiencia deportiva inolvidable en Madrid y
+              descubre el apasionante mundo del fútbol en el estadio del Real
+              Madrid. Disfruta de emocionantes partidos, visita el museo y
+              recorre los lugares emblemáticos del club más laureado de la
+              historia.
+            </p>
+          </div>
+          <div class="col-md-8">
+            <a data-fslightbox href="./img/01gs2pr2r09ybg2834as.webp">
+              <img
+                class="ms-5 w-100"
+                src="./img/skysport_de-klub-wm-benzema_6057321.jpg"
+                width="70%"
+                alt="Student"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="Ecológico" class="bg-lightp-3 mb-5">
+        <h2 class="text-secondary fw-bolder display-4 mb-4">
+          Turismo Ecológico en Madrid
+        </h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card border-warning">
+                <div class="card-header fs-4">Parques Naturales</div>
+                <div class="card-body">
+                  <p class="card-text fs-4">
+                    Visita la Sierra de Guadarrama y la Cuenca Alta del
+                    Manzanares para disfrutar de la naturaleza en su estado más
+                    puro.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <div class="card border-warning">
+                <div class="card-header fs-3">Rutas de Senderismo</div>
+                <div class="card-body">
+                  <p class="card-text fs-3">
+                    Embárcate en emocionantes caminatas por los senderos bien
+                    marcados en la región.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <div class="card border-warning">
+                <div class="card-header fs-3">Reservas de la Biosfera</div>
+                <div class="card-body">
+                  <p class="card-text fs-3">
+                    Explora los espacios protegidos de la Biosfera de la
+                    Comunidad de Madrid.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="atracciones" class="container bg-body-secondary mb-5 p-3">
+        <h2 class="text-secondary fw-bolder display-4 m-5">
+          Atracciones Turísticas en Madrid
+        </h2>
+        <div class="row g-5 justify-content-between">
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a data-fslightbox href="./img/IMG_2965.jpg">
+                <img
+                  src="./img/IMG_2965.jpg"
+                  style="width: 24rem; height: 15rem"
+                  class="card-img-top"
+                  alt="t1"
+                />
+              </a>
+
+              <div class="card-body">
+                <h5 class="card-title fs-3">Puerta del Sol</h5>
+                <p class="card-text fs-4">
+                  El kilómetro cero de la ciudad, famoso por su reloj y
+                  tradicionales celebraciones.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a data-fslightbox href="./img/IMG_2966.jpeg">
+                <img
+                  src="./img/IMG_2966.jpeg"
+                  style="width: 24rem; height: 15rem"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+
+              <div class="card-body">
+                <h5 class="card-title fs-3 mb-4">Palacio Real</h5>
+                <p class="card-text fs-4 mt-4">
+                  Descubre la majestuosidad de la residencia oficial de la
+                  familia real española.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a data-fslightbox href="./img/IMG_2968.jpeg">
+                <img src="./img/IMG_2968.jpeg" class="card-img-top" alt="..." />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Parque del Retiro</h5>
+                <p class="card-text fs-4">
+                  Pasea por los hermosos jardines y disfruta de sus famosos
+                  estanques y monumentos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="visitar" class="container mb-5 m-4 p-5">
+        <h2 class="text-secondary fw-bolder display-4 p-3 mb-4">
+          Consejos para Visitar Madrid
+        </h2>
+        <div class="row d-flex justify-content-around mt-3">
+          <div class="col-sm-4">
+            <div class="card bg-body-secondary">
+              <div class="card-body">
+                <h5 class="card-title fs-4">Idioma</h5>
+                <p class="card-text fs-5">
+                  Aprende algunas frases básicas en español para comunicarte con
+                  los locales.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title fs-4">Clima</h5>
+                <p class="card-text fs-5">
+                  Elige la época del año adecuada para visitar Madrid según tus
+                  preferencias de clima.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-around g-3 mt-3">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title fs-4">Seguridad</h5>
+                <p class="card-text fs-5">
+                  Madrid es una ciudad segura, pero siempre es bueno estar
+                  atento a tus pertenencias.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card bg-secondary-subtle">
+              <div class="card-body">
+                <h5 class="card-title fs-4">Horarios</h5>
+                <p class="card-text fs-5 mb-3 mt-3">
+                  Ten en cuenta que los españoles tienen horarios de comidas
+                  diferentes y siestas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------------- -->
+      <section id="gastronomía" class="container mt-5 mb-5 border">
+        <h2 class="text-secondary fw-bolder display-4">
+          Gastronomía en Madrid
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title fs-4">Tapas</h5>
+              <p class="card-text fs-5">
+                Deléitate con una amplia variedad de tapas en los bares y
+                tabernas tradicionales.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title fs-4">Cocido Madrileño</h5>
+              <p class="card-text fs-5">
+                Prueba el famoso cocido madrileño, un sabroso plato tradicional
+                a base de garbanzos.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title fs-4">Churros con Chocolate</h5>
+              <p class="card-text fs-5">
+                Disfruta de este dulce tradicional en uno de los famosos
+                chocolaterías de Madrid.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title fs-4">Vinos y Cocteles</h5>
+              <p class="card-text fs-5">
+                Saborea una copa de vino español o degusta exquisitos cocteles
+                en los bares de moda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="transporte" class="container bg-body-secondary mt-5">
+        <h2 class="text-secondary fw-bolder display-4 m-5">
+          Transporte en Madrid
+        </h2>
+        <div class="row g-5 justify-content-between">
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <a data-fslightbox href="./img/madrid-metro-haritasi.jpg">
+                <img
+                  src="./img/madrid-metro-haritasi.jpg"
+                  class="card-img-top w-100"
+                  alt="t1"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Metro</h5>
+                <p class="card-text fs-4">
+                  El metro de Madrid es una forma rápida y conveniente de
+                  moverse por la ciudad.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="card mt-2">
+              <a
+                data-fslightbox
+                href="./img/02-comprar-bicicletas-usadas-en-madrid-570x375.jpg"
+              >
+                <img
+                  src="./img/02-comprar-bicicletas-usadas-en-madrid-570x375.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Bicicletas Públicas</h5>
+                <p class="card-text fs-4 mt-4">
+                  Explora Madrid en bicicleta con el sistema de alquiler de
+                  bicicletas públicas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card mt-3">
+              <a data-fslightbox href="./img/Fiat-500e-movilidadhoy_06.jpg">
+                <img
+                  src="./img/Fiat-500e-movilidadhoy_06.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Vehículo Privado</h5>
+                <p class="card-text fs-4 mt-5">
+                  Si prefieres mayor comodidad, alquilar un coche puede ser la
+                  mejor opción.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -- Contact --- -->
+
+      <section id="map" class="container bg-light p-3">
+        <h5 class="title display-4">Mapa de Madrid</h5>
+        <article id="location" class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77767.52979999674!2d-3.70379!3d40.416775999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228f67bf2c97d%3A0x72a55d647c08c9d8!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1686144961407!5m2!1sen!2suss"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-center text-white p-4">
+      <article class="p-2 h6">
+        <h4>Descubre la Belleza de Madrid!</h4>
+        <p>
+          Ahora que sabes todo sobre Madrid, ¿por qué esperar? ¡Planifica tu
+          viaje ahora y descubre la belleza y la diversidad de esta increíble
+          ciudad!
+        </p>
+        <p>
+          &copy
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Copyright by Alkan
+        </p>
+      </article>
+    </footer>
+
+    <!-- UP-BTN  -->
+    <a class="btn-up" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="./lib/fslightbox.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

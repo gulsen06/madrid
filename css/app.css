@@ -1,0 +1,122 @@
+:root {
+  --red: #dc3545;
+}
+
+body {
+  background-color: #f1e7d5 !important ;
+}
+
+/*! -------------- 1- NAVBAR -------------- */
+.navbar {
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+}
+.navbar-nav {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+  color: var(--red) !important;
+}
+
+.carousel-item {
+  max-height: calc(100vh);
+}
+
+.carousel-caption .btn {
+  width: 7rem;
+}
+.carousel-caption h5 {
+  color: var(--red);
+  font-size: 2.4rem;
+  text-shadow: 3px 3px 3px rgb(18, 16, 16);
+}
+.carousel-caption p {
+  font-weight: 1rem;
+  font-size: 1.7rem;
+}
+.carousel-caption {
+  bottom: 27rem !important;
+}
+
+.carousel-indicators {
+  gap: 0.7rem !important;
+}
+.carousel-indicators button {
+  background-color: var(--red) !important;
+  padding: 0.1rem !important;
+  width: 3rem !important;
+}
+
+section.container .card {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+section.container .card:hover {
+  transform: scale(1.09);
+}
+
+section.container i {
+  transition: 0.9s;
+}
+section.container i:hover {
+  opacity: 0.5;
+}
+h2.text:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+.border {
+  border: 10px solid gray !important;
+  border-radius: 5%;
+  background-color: rgb(241, 231, 213);
+}
+.border:hover {
+  transform: scale3d(1, 1.4, 0.5);
+}
+section#courses .nav-link {
+  color: white;
+}
+section#courses .nav-pills {
+  font-size: 0.8rem;
+}
+
+.display-4:hover {
+  animation: shine 1s forwards;
+}
+
+@keyframes shine {
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff8a00, 0 0 30px #ff8a00;
+  }
+}
+/*? -------------- BTN-UP -------------- */
+.btn-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.btn-up:hover {
+  color: rgb(171, 161, 161);
+}
+.btn-up:hover i {
+  transform: scale(1.2);
+  font-size: 1.4rem;
+}
